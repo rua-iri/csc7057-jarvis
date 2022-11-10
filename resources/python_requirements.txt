@@ -1,0 +1,3 @@
+deepspeech
+adafruit-circuitpython-charlcd
+pygame

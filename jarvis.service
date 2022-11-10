@@ -1,0 +1,12 @@
+
+[Unit]
+Description=Run the Jarvis program upon startup
+After=multi-user.target
+
+[Service]
+WorkingDirectory=/home/pi/jarvis/
+ExecStart=/usr/bin/python3 /home/pi/jarvis/jarvis_assistant.py -m /home/pi/deepspeech-0.9.3-models.tflite
+User=pi
+
+[Install]
+WantedBy=multi-user.target
